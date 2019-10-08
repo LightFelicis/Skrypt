@@ -181,9 +181,10 @@ Spróbujemy napisać funkcję rekurencyjną, która posortuje nam ciąg. Będzie
         if (kon - pocz == 0) {
             return;
         } else {
-            Posortuj(pocz, (pocz + kon)/2)
-            Posortuj((pocz + kon)/2 + 1, kon);
-            Scal(pocz, kon/2, kon);
+            int srodek = (pocz + kon)/2;
+            Posortuj(pocz, srodek);
+            Posortuj(srodek + 1, kon);
+            Scal(pocz, srodek, kon);
         }
     }
 ```
