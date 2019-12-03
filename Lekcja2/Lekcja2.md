@@ -30,7 +30,7 @@ Możemy rozwiązać to zadanie, korzystając z pętli.
     int wynik = 1;
     int N;
     cin >> N;
-    for (int i = 1; i < N; i++) {
+    for (int i = 1; i <= N; i++) {
         wynik = wynik*i;
     }
     cout << wynik;
@@ -129,7 +129,7 @@ Wiemy, że oba ciągi są posortowane rosnąco. Niech tablica wynikowa to W, a t
 Możemy stworzyć tablicę W w złożoności O(N+M).
 
 ```C++
-    int Scal(int A[], int B[], int W[]) {
+    void Polacz(int A[], int B[], int W[]) {
         int i = 0;
         int j = 0;
         int ktora = 0;
@@ -154,7 +154,6 @@ Możemy stworzyć tablicę W w złożoności O(N+M).
             j++; ktora++;
         }
 
-        return W;
     }
 ```
 
